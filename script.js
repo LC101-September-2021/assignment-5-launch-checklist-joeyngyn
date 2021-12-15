@@ -32,6 +32,7 @@ window.addEventListener("load", function(event) {
        const copilot = event.target[1].value;
        const fuelLevel = event.target[2].value;
        const cargoLevel = event.target[3].value;
+       console.log(pilot, copilot, fuelLevel, cargoLevel);
        helper.formSubmission(document, listedPlanets, pilot, copilot, fuelLevel, cargoLevel);
    });
 });
