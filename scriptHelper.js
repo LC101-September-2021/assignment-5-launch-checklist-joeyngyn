@@ -23,7 +23,7 @@ function addDestinationInfo(
             `;
 }
 function validateInput(testInput) {
-  if (testInput === " ") {
+  if (testInput === "") {
     return "Empty";
   } else if (isNaN(testInput)) {
     return "Not a Number";
