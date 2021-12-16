@@ -18,16 +18,17 @@ window.addEventListener("load", function(event) {
            planet.image
        );
    });
+   
    let list = document.getElementById("faultyItems");
    list.style.visibility = "hidden";
    let form = document.querySelector("form");
-   window.addEventListener("submit", function(event) {
+
+   form.addEventListener("submit", function(event) {
        event.preventDefault();
        const pilot = document.querySelector("input[name=pilotName]").value;
        const copilot = document.querySelector("input[name=copilotName]").value;
        const fuelLevel = Number(document.querySelector("input[name=fuelLevel]").value);
        const cargoLevel = Number(document.querySelector("input[name=cargoMass]").value);
-    //    let list = document.getElementById('faultyItems');
       
        formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
        
